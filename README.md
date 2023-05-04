@@ -5,13 +5,13 @@ This bot allows you to chat with an external uploaded PDF file using GPT functio
 ## Description
 Did up this PDF QA bot demo to better understand the arena of LLM and its application abilities as my first project as an intern in CDG. In summary this application utilises the langchain framework built around LLMs with panel for a quick frontend dashboard generation.
 
-The application splits the document into smaller chunks and employs OpenAI embeddings to measure the relatedness of text strings. DO NOTE this costs $. Set up billing at [OpenAI](https://platform.openai.com/account). Requests are billed based on the number of tokens in the input sent. It is acknowledged that the OpenAI embeddings are considered poor in the hugging face community hence the option to use improved embeddings to reduce hallucinations and improve content quality is open.
+The application splits the document into smaller chunks and employs OpenAI embeddings to measure the semantic similarity (relatedness) of text strings to the question prompt. DO NOTE this costs $. Set up billing at [OpenAI](https://platform.openai.com/account). Requests are billed based on the number of tokens in the input sent. It is acknowledged that the OpenAI embeddings are considered poor in the hugging face community hence the option to use improved embeddings to reduce hallucinations and improve content quality is open.
 
 The option to customise the chaintype for the QA is open too but it is generally recommended to use "map_reduce" to ensure the the chunks are fed in batches instead of passing the whole pdf chunk in when using "stuff" chain type, preventing crash of the LLM. KNN algorithm is then incorporated to generate the most appropraite response from the extracted chunks compared against the question vector before passing it back to the GPT.
 
 The LLM used is OpenAI's GPT-3.5. The option to feed another LLM is open.
 
-The memory vectorstore used is pinecone for long-term memory. Ensure the right pinecone API key, environment and index_name is inputted before proceeding else the option to switch out to other long-term vectorstores or short-term vectorstores i.e Chroma is open (and easier).
+The vectorstore used is pinecone, a remote cloud-based storage, as a long-term memory for LLMs. Ensure the right pinecone API key, environment and index_name is inputted before proceeding else the option to switch out to other vectorstores i.e Chroma is open (and easier for local).
 
 The output of each run is stored locally and the model will refine and generate each response based on the history. Depending on the `k` chunks defined, the same k number of sources will be acknowledged below the result.
 
