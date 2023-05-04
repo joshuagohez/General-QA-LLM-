@@ -15,6 +15,11 @@ The memory vectorstore used is pinecone for longterm memory. Ensure the right pi
 
 The output of each run is stored locally and the model will refine and generate each response based on the history. Depending on the `k` chunks defined, the same k number of sources will be acknowledged below the result.
 
+## Demo Screenshots
+
+<img width="669" alt="Screenshot 2023-05-04 at 2 29 58 PM" src="https://user-images.githubusercontent.com/96434745/236127424-30805ed3-9cd4-4563-9f38-a583b5c13d71.png">
+<img width="667" alt="Screenshot 2023-05-04 at 2 30 22 PM" src="https://user-images.githubusercontent.com/96434745/236127430-8859043e-96c0-4d84-a2ab-7ff3b77c84cf.png">
+
 ## Getting Started
 
 ### Dependencies
@@ -40,7 +45,7 @@ panel serve qaApp.py
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+This project is licensed under the MIT License - see the LICENSE.md file for details
 
 ## Acknowledgments
 
