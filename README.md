@@ -11,7 +11,7 @@ The option to customise the chaintype for the QA is open too but it is generally
 
 The LLM used is OpenAI's GPT-3.5. The option to feed another LLM is open.
 
-The memory vectorstore used is pinecone for longterm memory. Ensure the right pinecone API key, environment and index_name is inputted before proceeding else the option to switch out to other longterm vectorstores or shortterm vectorstores i.e Chroma is open (and easier).
+The memory vectorstore used is pinecone for long-term memory. Ensure the right pinecone API key, environment and index_name is inputted before proceeding else the option to switch out to other long-term vectorstores or short-term vectorstores i.e Chroma is open (and easier).
 
 The output of each run is stored locally and the model will refine and generate each response based on the history. Depending on the `k` chunks defined, the same k number of sources will be acknowledged below the result.
 
@@ -37,6 +37,7 @@ The output of each run is stored locally and the model will refine and generate 
 ```
 panel serve qaApp.py
 ```
+open `http://localhost:5006/qaApp` in browser once successfully run in local
 
 ## Version History
 
