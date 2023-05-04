@@ -49,7 +49,7 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 
 ## Acknowledgments
 
-* [project ideation](https://www.youtube.com/watch?v=DXmiJKrQIvg&t=620s)
+* [Project ideation](https://www.youtube.com/watch?v=DXmiJKrQIvg&t=620s)
 * [Langchain documentation](https://python.langchain.com/en/latest/index.html)
 * [Panel documentation](https://panel.holoviz.org/)
 * [OpenAI API documentation](https://platform.openai.com/docs/introduction)
