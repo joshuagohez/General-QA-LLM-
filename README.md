@@ -7,7 +7,7 @@ Did up this PDF QA bot demo to better understand the arena of LLM and its applic
 
 The application splits the document into smaller chunks and employs OpenAI embeddings to measure the relatedness of text strings. DO NOTE this costs $. Set up billing at [OpenAI](https://platform.openai.com/account). Requests are billed based on the number of tokens in the input sent. It is acknowledged that the OpenAI embeddings are considered poor in the hugging face community hence the option to use improved embeddings to reduce hallucinations and improve content quality is open.
 
-The option to customise the chaintype for the QA is open too but it is generally recommended to use "map_reduce" to ensure the relevant `k` chunks are utilised instead of passing the whole pdf chunk in. KNN algorithm is then incorporated to generate the most appropraite response from the extracted chunks compared against the question vector before passing it back to the GPT.
+The option to customise the chaintype for the QA is open too but it is generally recommended to use "map_reduce" to ensure the the chunks are fed in batches instead of passing the whole pdf chunk in when using "stuff" chain type, preventing crash of the LLM. KNN algorithm is then incorporated to generate the most appropraite response from the extracted chunks compared against the question vector before passing it back to the GPT.
 
 The LLM used is OpenAI's GPT-3.5. The option to feed another LLM is open.
 
