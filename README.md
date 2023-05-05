@@ -17,6 +17,7 @@ The output of each run is stored locally and the model will refine and generate 
 
 ## Demo Screenshots
 
+(do excuse the inaccurate question terminology)
 <img width="669" alt="Screenshot 2023-05-04 at 2 29 58 PM" src="https://user-images.githubusercontent.com/96434745/236127424-30805ed3-9cd4-4563-9f38-a583b5c13d71.png">
 <img width="667" alt="Screenshot 2023-05-04 at 2 30 22 PM" src="https://user-images.githubusercontent.com/96434745/236127430-8859043e-96c0-4d84-a2ab-7ff3b77c84cf.png">
 
