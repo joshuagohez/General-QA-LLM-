@@ -15,6 +15,8 @@ The vectorstore used is pinecone, a remote cloud-based storage, as a long-term m
 
 The output of each run is stored locally and the model will refine and generate each response based on the history. Depending on the `k` chunks defined, the same k number of sources will be acknowledged below the result.
 
+<img width="779" alt="Screenshot 2023-05-10 at 5 28 43 PM" src="https://github.com/joshuagohez/Generative-Question-Answering/assets/96434745/806db7ba-d690-416e-9352-dd2b57a676f1">
+
 ## Demo Screenshots
 
 (do excuse the inaccurate question terminology)
